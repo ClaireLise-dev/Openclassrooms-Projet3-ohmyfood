@@ -1,0 +1,54 @@
+header {
+    @include header;
+    @include flex_column;
+
+    h1 {
+        @include header_h1;
+        @include flex_center;
+
+    }
+}
+footer {
+    @include footer;
+    @include flex_space_between;
+    
+    h2 {
+        @include footer_h2;
+    }
+}
+
+aside {
+    @include aside;
+    @include flex_column;
+}
+
+.loading {
+    @include aside_h2;
+}
+
+main {
+    @include main;
+    @include flex_column;
+}
+
+section
+{
+    @include section;
+    @include flex_column;
+    box-shadow: $box_shadow;
+}
+.menu
+{
+    @include flex_column;
+    margin: 10px;
+
+    h2 
+    {
+        font-size: 2.3em;
+    }
+
+    h3 
+    {
+        font-size: 1.9em;
+    }
+}

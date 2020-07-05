@@ -1,0 +1,101 @@
+@mixin flex_column
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex_center
+{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex_space_between
+{
+    display: flex;
+	justify-content: space-between;
+}
+
+@mixin header
+{
+    font-family: $main_font;
+    font-size: 1.3em;
+    background-color: $primary_color;
+    text-align: center;
+    height: 100px;
+}
+
+@mixin header_h1
+{
+    color: $logo_color;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+@mixin footer
+{
+    margin: auto;
+    height: 100px;
+    background-color: $primary_color;
+    color: $logo_color;
+    position: sticky;
+    padding: 0px 10px 0px 10px;
+    margin:auto;
+    bottom: 0;
+    text-align: center;
+}
+
+@mixin footer_h2
+{
+    color: $logo_color;
+    text-decoration:none;
+    font-family: $main_font;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+@mixin a
+{
+    color: $logo_color;
+    text-decoration: none;
+    text-align: center;
+}
+
+@mixin aside
+{
+    background-color: $primary_color;
+    color: $logo_color;
+    width: 260px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@mixin aside_h2
+{
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+@mixin main
+{
+    background-color: $secondary_color;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+@mixin section
+{
+    width: 290px;
+    height: 360px;
+    margin: 20px;
+    text-align: center;
+}
+
+
