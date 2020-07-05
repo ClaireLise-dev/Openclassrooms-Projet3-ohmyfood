@@ -38,7 +38,7 @@
 @mixin footer
 {
     margin: auto;
-    height: 100px;
+    height: 50px;
     background-color: $primary_color;
     color: $logo_color;
     position: sticky;
@@ -57,12 +57,6 @@
     font-weight: 500;
 }
 
-@mixin a
-{
-    color: $logo_color;
-    text-decoration: none;
-    text-align: center;
-}
 
 @mixin aside
 {
@@ -98,4 +92,42 @@
     text-align: center;
 }
 
+@mixin la_note
+{
+    background-color: $lanotebg-color;
+    color: $lanote_menu;
+    font-family: $lanote_title_font;
+    font-weight: lighter;
+}
 
+@mixin lanote__title
+{
+    color:$lanote_menu;
+    text-decoration: none;
+}
+
+@mixin lanote__icon
+{
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 5px;
+}
+
+@mixin fas {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+}
+
+@mixin a_header_footer {
+    color: $logo_color;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@mixin a {
+    text-decoration: none;
+}

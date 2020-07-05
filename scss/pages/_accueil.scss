@@ -7,13 +7,20 @@ header {
         @include flex_center;
 
     }
+    a {
+        @include a_header_footer;
+        @include flex_center;
+    }
 }
 footer {
     @include footer;
     @include flex_space_between;
-    
     h2 {
         @include footer_h2;
+    }
+    a {
+        @include a_header_footer;
+        @include flex_center;
     }
 }
 
@@ -42,13 +49,32 @@ section
     @include flex_column;
     margin: 10px;
 
-    h2 
+    h2
     {
         font-size: 2.3em;
     }
 
-    h3 
+    h3
     {
         font-size: 1.9em;
     }
 }
+
+.lanote {
+    @include la_note;
+    a {
+        @include a;
+    }
+    h3 {
+        @include lanote__title;
+        @include a;
+    }
+    h2 {
+        @include lanote__title;
+        font-family: $second_font;
+    }
+}
+.fas {
+        @include lanote__icon;
+        @include fas;
+     }
