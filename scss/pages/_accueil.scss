@@ -77,4 +77,18 @@ section
 .fas {
         @include lanote__icon;
         @include fas;
-     }
+}
+.lechic {
+        @include lechic;
+        a{
+            @include a
+        }
+        h2 {
+            color: $lechic_menu1;
+        }
+}
+.lechic__title--gradient{
+
+    @include lechic__title--gradient;
+
+}
