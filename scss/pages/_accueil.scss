@@ -92,3 +92,50 @@ section
     @include lechic__title--gradient;
 
 }
+.delice {
+
+    @include delice;
+    a {
+        @include a
+    }
+    h2 {
+        font-family: $menu_delice_palette;
+        font-weight: lighter;
+    }
+}
+.delice__title--gradient {
+    @include delice__title--gradient;
+}
+.palette {
+    @include palette;
+    a {
+        @include a
+    }
+    h2 {
+        color:$palette_menu;
+        font-family: $menu_delice_palette;
+        font-weight: lighter;
+    }
+}
+.palette__title--gradient {
+    @include palette__title--gradient;
+}
+.zoom {
+    @include zoom;
+}
+.loading {
+    .loading__dot1 {
+        animation: dots 2s infinite ease-in-out;
+        font-size: 2em;
+    }
+    .loading__dot2 {
+        animation: dots 2s infinite ease-in-out;
+        animation-delay: 0.4s;
+        font-size: 2em;
+    }
+    .loading__dot3 {
+        animation: dots 2s infinite ease-in-out;
+        animation-delay: 0.6s;
+        font-size: 2em;
+    }
+}

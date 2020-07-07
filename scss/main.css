@@ -1,8 +1,62 @@
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+@-webkit-keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* fonts */
 /* colors */
 /* backgrounds colors */
 /* fonts colors */
-/* degraded colors */
+/* gradient colors */
 /* icon colors */
 /* box shadow */
 header {
@@ -81,6 +135,13 @@ footer h2 {
   font-weight: 500;
 }
 
+footer h2:hover {
+  -webkit-animation: wiggle 100ms infinite;
+          animation: wiggle 100ms infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 footer a {
   color: #fdcb46;
   text-decoration: none;
@@ -121,8 +182,8 @@ aside {
 .loading {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
-  padding-bottom: 10px;
+  font-size: 1.5em;
+  padding-bottom: 15px;
 }
 
 main {
@@ -146,7 +207,7 @@ main {
 
 section {
   width: 290px;
-  height: 370px;
+  height: 360px;
   margin: 20px;
   text-align: center;
   display: -webkit-box;
@@ -195,7 +256,6 @@ section {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Devonshire", cursive;
-  font-weight: lighter;
 }
 
 .lanote a {
@@ -211,7 +271,7 @@ section {
 .lanote h2 {
   color: #3c1218;
   text-decoration: none;
-  font-family: "Kalam", cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .fas {
@@ -242,7 +302,7 @@ section {
 }
 
 .lechic__title--gradient {
-  font-family: "Kurale", serif;
+  font-family: "Croissant One", serif;
   font-size: small;
   padding-right: 20px;
   padding-left: 20px;
@@ -251,6 +311,85 @@ section {
   color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+}
+
+.delice {
+  background-color: #f9f9f9;
+  color: #2b91f8;
+  font-family: "Dancing Script", cursive;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.delice a {
+  text-decoration: none;
+}
+
+.delice h2 {
+  font-family: "kalam", cursive;
+  font-weight: lighter;
+}
+
+.delice__title--gradient {
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), color-stop(#518cf0), to(#0887fb));
+  background-image: linear-gradient(0.25turn, #0431df, #518cf0, #0887fb);
+}
+
+.palette {
+  background-color: #fdfffd;
+  color: #72bf56;
+  font-family: "Kaushan Script", cursive;
+  text-decoration: none;
+}
+
+.palette a {
+  text-decoration: none;
+}
+
+.palette h2 {
+  color: #72bf56;
+  font-family: "kalam", cursive;
+  font-weight: lighter;
+}
+
+.palette__title--gradient {
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all ease 600ms;
+  transition: all ease 600ms;
+}
+
+.loading .loading__dot1 {
+  -webkit-animation: dots 2s infinite ease-in-out;
+          animation: dots 2s infinite ease-in-out;
+  font-size: 2em;
+}
+
+.loading .loading__dot2 {
+  -webkit-animation: dots 2s infinite ease-in-out;
+          animation: dots 2s infinite ease-in-out;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  font-size: 2em;
+}
+
+.loading .loading__dot3 {
+  -webkit-animation: dots 2s infinite ease-in-out;
+          animation: dots 2s infinite ease-in-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  font-size: 2em;
 }
 
 body {
