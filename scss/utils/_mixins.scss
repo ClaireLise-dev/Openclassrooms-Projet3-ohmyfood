@@ -9,10 +9,12 @@
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 @mixin flex_space_between
 {
     display: flex;
+    flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -183,4 +185,14 @@
         transition: all ease 600ms;
       }
 }
+@mixin card {
+    margin:auto;
+    height:auto;
+    width:90%;
+}
 
+@mixin line_lanote {
+    display:inline-block;
+    height: 8px;
+    width: 10px;
+}
