@@ -54,7 +54,6 @@
 
 /* fonts */
 /* colors */
-/* backgrounds colors */
 /* fonts colors */
 /* gradient colors */
 /* icon colors */
@@ -236,8 +235,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0 0 30px #bbba;
-          box-shadow: 0 0 30px #bbba;
+  -webkit-box-shadow: 0 0 20px grey;
+          box-shadow: 0 0 20px grey;
 }
 
 .menu {
@@ -268,7 +267,7 @@ section {
 .lanote {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: "Devonshire", cursive;
+  font-family: "kalam", cursive;
 }
 
 .lanote a {
@@ -284,7 +283,7 @@ section {
 .lanote h2 {
   color: #3c1218;
   text-decoration: none;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "kalam", cursive;
 }
 
 .fas {
@@ -424,24 +423,27 @@ section {
 .page1 {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: "Devonshire", cursive;
-  -webkit-box-shadow: 0 0 30px #bbba;
-          box-shadow: 0 0 30px #bbba;
+  font-family: "kalam", cursive;
+  -webkit-box-shadow: 0 0 20px grey;
+          box-shadow: 0 0 20px grey;
   width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .page1 h2 {
   font-size: 1.3em;
-  font-weight: 200;
+  font-weight: bold;
 }
 
 .page1 .price {
   font-weight: bold;
 }
 
-.page1 .lanote__title {
+.lanote__title {
   color: #3c1218;
   text-decoration: none;
+  font-family: "Devonshire", cursive;
 }
 
 .bottom_title {

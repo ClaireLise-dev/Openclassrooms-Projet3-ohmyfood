@@ -14,18 +14,21 @@
     @include la_note;
     box-shadow: $box-shadow;
     width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
     h2
     {
         font-size: 1.3em;
-        font-weight: 200;
+        font-weight: bold;
     }
 
     .price {
         font-weight: bold;
     }
-    .lanote__title {
-         @include lanote__title;
-    }
+}
+.lanote__title {
+    @include lanote__title;
+    font-family: $lanote_title_font;
 }
 .bottom_title {
     @include flex_center;
