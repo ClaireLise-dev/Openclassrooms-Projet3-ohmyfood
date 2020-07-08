@@ -8,6 +8,7 @@
 .lanote__title {
     @include lanote__title;
     font-family: $lanote_title_font;
+    font-size: 3em;
 }
 
 .lanote__page {
@@ -41,7 +42,7 @@
         margin: auto;
 }
 .lanote__line {
-   @include lanote_line;
+   @include lanote__line;
 }
 .subtitle {
    display:inline;
@@ -51,3 +52,4 @@
         background-size: 100% 100%;
     }
 }
+

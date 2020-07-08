@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes wiggle {
   0% {
     -webkit-transform: translate(2px, 0);
@@ -12,7 +13,6 @@
             transform: translate(2px, 0);
   }
 }
-
 @keyframes wiggle {
   0% {
     -webkit-transform: translate(2px, 0);
@@ -52,6 +52,10 @@
   }
 }
 
+/* flex */
+/*footer et header*/
+/*Autres éléments page accueil*/
+/*Eléments pages*/
 /* fonts */
 /* colors */
 /* fonts colors */
@@ -277,14 +281,12 @@ section {
 .lanote h3 {
   color: #3c1218;
   text-decoration: none;
-  font-size: 3em;
   text-decoration: none;
 }
 
 .lanote h2 {
   color: #3c1218;
   text-decoration: none;
-  font-size: 3em;
   font-family: "kalam", cursive;
 }
 
@@ -417,8 +419,8 @@ section {
 .lanote__title {
   color: #3c1218;
   text-decoration: none;
-  font-size: 3em;
   font-family: "Devonshire", cursive;
+  font-size: 3em;
 }
 
 .lanote__page {
@@ -493,6 +495,120 @@ section {
 }
 
 .subtitle:hover {
+  background-size: 100% 100%;
+}
+
+.title {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: auto;
+  height: auto;
+}
+
+.lechic__title--gradient {
+  font-family: "Croissant One", serif;
+  font-size: small;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
+  background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+  font-family: "Croissant One", serif;
+  font-size: 1.5em;
+}
+
+.lechic__page {
+  background-color: #fff5fe;
+  color: #c77412;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 100;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 20px grey;
+          box-shadow: 0 0 20px grey;
+  width: 90%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto auto 30px auto;
+}
+
+.lechic__page h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.lechic__page .price {
+  font-weight: bold;
+}
+
+.lechic__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lechic__line {
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+}
+
+.subtitle__lechic {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#lechic__font--color2 {
+  color: #a56799;
+}
+
+#lechic__font--color3 {
+  color: #6e4ccc;
+}
+
+.anim1 {
+  display: inline;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c77412), color-stop(10%, #c77412), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.anim1:hover {
+  background-size: 100% 100%;
+}
+
+.anim2 {
+  display: inline;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a56799), color-stop(10%, #a56799), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.anim2:hover {
+  background-size: 100% 100%;
+}
+
+.anim3 {
+  display: inline;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(10%, #6e4ccc), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.anim3:hover {
   background-size: 100% 100%;
 }
 

@@ -1,0 +1,59 @@
+.title {
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+}
+.lechic__title--gradient {
+    @include lechic__title--gradient;
+    font-family: $lechic_title_font;
+    font-size: 1.5em;
+}
+.lechic__page {
+    @include lechic;
+    box-shadow: $box-shadow;
+    width: 90%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto auto 30px auto;
+    h2
+    {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .price {
+        font-weight: bold;
+    }
+}
+.lechic__subtitle {
+    @include flex_center;
+}
+.lechic__line {
+    @include lechic__line;
+}
+.subtitle__lechic {
+   margin: auto;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+#lechic__font--color2 {
+    color: $lechic_menu2;
+}
+#lechic__font--color3 {
+    color: $lechic_menu3;
+}
+.anim1 {
+    display:inline;
+    @include anim1;
+}
+.anim2 {
+    display:inline;
+    @include anim2;
+}
+.anim3 {
+    display:inline;
+    @include anim3;
+}

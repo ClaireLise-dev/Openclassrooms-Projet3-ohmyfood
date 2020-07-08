@@ -1,3 +1,4 @@
+/* flex */
 @mixin flex_column
 {
     display: flex;
@@ -17,6 +18,7 @@
     flex-direction: row;
 	justify-content: space-between;
 }
+/*footer et header*/
 
 @mixin header
 {
@@ -62,7 +64,7 @@
           }
 }
 
-
+/*Autres éléments page accueil*/
 @mixin aside
 {
     background-color: $primary_color;
@@ -108,7 +110,6 @@
 {
     color:$lanote_menu;
     text-decoration: none;
-    font-size: 3em;
 }
 
 @mixin lanote__icon
@@ -186,13 +187,14 @@
         transition: all ease 600ms;
       }
 }
+/*Eléments pages*/
 @mixin card {
     margin:auto;
     height:auto;
     width:90%;
 }
 
-@mixin lanote_line {
+@mixin lanote__line {
     display:inline-block;
     height: 3px;
     width: 60px;
@@ -205,4 +207,30 @@
     &:hover{
         background-size: 100% 100%;
     }
+}
+
+@mixin lechic__line {
+    display: inline-block;
+    height:3px;
+    width: 45px;
+}
+
+@mixin anim1 {
+    background: linear-gradient(to top, $lechic_menu1 0%, $lechic_menu1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+
+@mixin anim2 {
+    background: linear-gradient(to top, $lechic_menu2 0%, $lechic_menu2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+@mixin anim3 {
+    background: linear-gradient(to top, $lechic_menu3 0%, $lechic_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
 }
