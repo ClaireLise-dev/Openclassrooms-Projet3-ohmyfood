@@ -191,8 +191,17 @@
     width:90%;
 }
 
-@mixin line_lanote {
+@mixin lanote_line {
     display:inline-block;
-    height: 8px;
-    width: 10px;
+    height: 3px;
+    width: 60px;
+}
+
+
+@mixin underline_lanote {
+    background: linear-gradient(to top, $lanote_menu 0%, $lanote_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;
+    }
 }

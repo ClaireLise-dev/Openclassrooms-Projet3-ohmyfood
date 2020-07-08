@@ -4,18 +4,15 @@
     width: auto;
     height: auto;
 }
-.card {
-        margin: auto auto 30px auto;
-        height: auto;
-        width: 90%;
-        box-shadow: none;
-}
-.page1 {
+
+.lanote__page {
     @include la_note;
     box-shadow: $box-shadow;
     width: 90%;
+    height: auto;
     padding-left: 10px;
     padding-right: 10px;
+    margin: auto auto 30px auto;
     h2
     {
         font-size: 1.3em;
@@ -30,22 +27,25 @@
     @include lanote__title;
     font-family: $lanote_title_font;
 }
-.bottom_title {
+.bottom__title {
     @include flex_center;
     .lanote__icon {
         margin: auto 15px auto 0px;
     }
 }
-.line1 {
-    @include flex_center;
-    @include line_lanote;
-    width:90%;
-    margin: auto;
-    .line {
-        width: 50px;
-    }
+.lanote__subtitle {
+        @include flex_center;
+        width: 90%;
+        margin: auto;
 }
-.border{
+.lanote__line {
+   @include lanote_line;
+}
+.subtitle {
     display:inline;
-    margin:auto 10px auto 10px;
+   @include underline_lanote;
+   margin: auto;
+    &:hover{
+        background-size: 100% 100%;
+    }
 }

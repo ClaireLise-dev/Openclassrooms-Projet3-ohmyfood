@@ -412,31 +412,25 @@ section {
   height: auto;
 }
 
-.card {
-  margin: auto auto 30px auto;
-  height: auto;
-  width: 90%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.page1 {
+.lanote__page {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "kalam", cursive;
   -webkit-box-shadow: 0 0 20px grey;
           box-shadow: 0 0 20px grey;
   width: 90%;
+  height: auto;
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto auto 30px auto;
 }
 
-.page1 h2 {
+.lanote__page h2 {
   font-size: 1.3em;
   font-weight: bold;
 }
 
-.page1 .price {
+.lanote__page .price {
   font-weight: bold;
 }
 
@@ -446,7 +440,7 @@ section {
   font-family: "Devonshire", cursive;
 }
 
-.bottom_title {
+.bottom__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,11 +452,11 @@ section {
           align-items: center;
 }
 
-.bottom_title .lanote__icon {
+.bottom__title .lanote__icon {
   margin: auto 15px auto 0px;
 }
 
-.line1 {
+.lanote__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,20 +466,31 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block;
-  height: 8px;
-  width: 10px;
   width: 90%;
   margin: auto;
 }
 
-.line1 .line {
-  width: 50px;
+.lanote__line {
+  display: inline-block;
+  height: 3px;
+  width: 60px;
 }
 
-.border {
+.subtitle {
   display: inline;
-  margin: auto 10px auto 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3c1218), color-stop(10%, #3c1218), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+  margin: auto;
+}
+
+.subtitle:hover {
+  background-size: 100% 100%;
+}
+
+.subtitle:hover {
+  background-size: 100% 100%;
 }
 
 body {
