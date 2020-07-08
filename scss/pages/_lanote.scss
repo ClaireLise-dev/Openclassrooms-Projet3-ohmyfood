@@ -5,6 +5,11 @@
     height: auto;
 }
 
+.lanote__title {
+    @include lanote__title;
+    font-family: $lanote_title_font;
+}
+
 .lanote__page {
     @include la_note;
     box-shadow: $box-shadow;
@@ -23,10 +28,7 @@
         font-weight: bold;
     }
 }
-.lanote__title {
-    @include lanote__title;
-    font-family: $lanote_title_font;
-}
+
 .bottom__title {
     @include flex_center;
     .lanote__icon {
@@ -42,7 +44,7 @@
    @include lanote_line;
 }
 .subtitle {
-    display:inline;
+   display:inline;
    @include underline_lanote;
    margin: auto;
     &:hover{

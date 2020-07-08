@@ -277,12 +277,14 @@ section {
 .lanote h3 {
   color: #3c1218;
   text-decoration: none;
+  font-size: 3em;
   text-decoration: none;
 }
 
 .lanote h2 {
   color: #3c1218;
   text-decoration: none;
+  font-size: 3em;
   font-family: "kalam", cursive;
 }
 
@@ -412,6 +414,13 @@ section {
   height: auto;
 }
 
+.lanote__title {
+  color: #3c1218;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Devonshire", cursive;
+}
+
 .lanote__page {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -432,12 +441,6 @@ section {
 
 .lanote__page .price {
   font-weight: bold;
-}
-
-.lanote__title {
-  color: #3c1218;
-  text-decoration: none;
-  font-family: "Devonshire", cursive;
 }
 
 .bottom__title {
