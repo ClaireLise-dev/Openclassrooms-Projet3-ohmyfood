@@ -1,5 +1,5 @@
-.delice__page {
-    @include delice;
+.palette__page {
+    @include palette;
     box-shadow: $box-shadow;
     width: 90%;
     height: auto;
@@ -15,26 +15,13 @@
         color:$delice_palette_page;
         font-family:$menu_delice_palette;
     }
-    .delice__title--gradient {
+    .palette__title--gradient {
         font-size: 2em;
     }
 }
-.delice__subtitle {
+.palette__subtitle {
     @include flex_space_between;
 }
-.delice_palette_dish {
-    text-align: center;
+.anim7 {
+    @include anim7;
 }
-.delice_palette_deco {
-    @include delice_palette_deco;
-}
-.anim4 {
-    @include anim4;
-}
-.anim5 {
-    @include anim5;
-}
-.anim6 {
-    @include anim6;
-}
-

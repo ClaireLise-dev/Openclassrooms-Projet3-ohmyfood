@@ -56,6 +56,7 @@
 /*footer et header*/
 /*Autres éléments page accueil*/
 /*Eléments pages*/
+/* Animations pages*/
 /* fonts */
 /* colors */
 /* fonts colors */
@@ -138,6 +139,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer h2 {
@@ -611,13 +615,11 @@ section {
 }
 
 .delice__page h2 {
-  font-size: 1em;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
-.delice__page .delice__font--black {
+.delice__page .font__black {
   color: #000000;
   font-family: "kalam", cursive;
 }
@@ -630,18 +632,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.delice__dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -649,13 +639,19 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.delice__deco {
+.delice_palette_dish {
+  text-align: center;
+}
+
+.delice_palette_deco {
   display: inline-block;
   height: 3px;
-  width: 90px;
+  width: 80px;
 }
 
 .anim4 {
@@ -688,6 +684,61 @@ section {
 }
 
 .anim6:hover {
+  background-size: 100% 100%;
+}
+
+.palette__page {
+  background-color: #fdfffd;
+  color: #72bf56;
+  font-family: "Kaushan Script", cursive;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 20px grey;
+          box-shadow: 0 0 20px grey;
+  width: 90%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto auto 30px auto;
+}
+
+.palette__page h2 {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.palette__page .font__black {
+  color: #000000;
+  font-family: "kalam", cursive;
+}
+
+.palette__page .palette__title--gradient {
+  font-size: 2em;
+}
+
+.palette__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anim7 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3d9339), color-stop(10%, #3d9339), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #3d9339 0%, #3d9339 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.anim7:hover {
   background-size: 100% 100%;
 }
 

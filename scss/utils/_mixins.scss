@@ -16,7 +16,8 @@
 {
     display: flex;
     flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
 }
 /*footer et header*/
 
@@ -62,6 +63,13 @@
             animation: wiggle 100ms infinite;
             animation-timing-function: linear;
           }
+}
+@mixin a_header_footer {
+    color: $logo_color;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 /*Autres éléments page accueil*/
@@ -124,14 +132,6 @@
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
-}
-
-@mixin a_header_footer {
-    color: $logo_color;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    text-align: center;
 }
 
 @mixin a {
@@ -200,21 +200,25 @@
     width: 60px;
 }
 
+@mixin lechic__deco {
+    display: inline-block;
+    height:3px;
+    width: 45px;
+}
+@mixin delice_palette_deco {
+    display: inline-block;
+    height:3px;
+    width: 80px;
+}
 
-@mixin underline_lanote {
+/* Animations pages*/
+@mixin lanote_anim {
     background: linear-gradient(to top, $lanote_menu 0%, $lanote_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
     &:hover{
         background-size: 100% 100%;
     }
 }
-
-@mixin lechic__deco {
-    display: inline-block;
-    height:3px;
-    width: 45px;
-}
-
 @mixin anim1 {
     background: linear-gradient(to top, $lechic_menu1 0%, $lechic_menu1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
@@ -234,11 +238,6 @@
     &:hover{
         background-size: 100% 100%;}
 }
-@mixin delice__deco {
-    display: inline-block;
-    height:3px;
-    width: 90px;
-}
 @mixin anim4 {
     background: linear-gradient(to top, $delice_menu_gradient1 0%, $delice_menu_gradient1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
@@ -253,6 +252,12 @@
 }
 @mixin anim6 {
     background: linear-gradient(to top, $delice_menu_gradient3 0%, $delice_menu_gradient3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+@mixin anim7 {
+    background: linear-gradient(to top, $palette_menu_gradient1 0%, $palette_menu_gradient1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
     &:hover{
         background-size: 100% 100%;}

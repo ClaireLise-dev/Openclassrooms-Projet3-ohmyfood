@@ -46,7 +46,7 @@
 }
 .subtitle {
    display:inline;
-   @include underline_lanote;
+   @include lanote_anim;
    margin: auto;
     &:hover{
         background-size: 100% 100%;
