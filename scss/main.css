@@ -518,6 +518,11 @@ section {
   font-weight: bold;
 }
 
+.lechic__page .lechic__title--gradient {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
 .lechic__page .price {
   font-weight: bold;
 }
@@ -534,7 +539,7 @@ section {
           align-items: center;
 }
 
-.lechic__line {
+.lechic__deco {
   display: inline-block;
   height: 3px;
   width: 45px;

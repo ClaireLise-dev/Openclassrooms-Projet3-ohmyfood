@@ -11,6 +11,10 @@
         font-size: 1.3em;
         font-weight: bold;
     }
+    .lechic__title--gradient {
+        font-size: 1.5em;
+        padding: 20px;
+    }
 
     .price {
         font-weight: bold;
@@ -19,8 +23,8 @@
 .lechic__subtitle {
     @include flex_center;
 }
-.lechic__line {
-    @include lechic__line;
+.lechic__deco {
+    @include lechic__deco;
 }
 .subtitle__lechic {
    margin: auto;
