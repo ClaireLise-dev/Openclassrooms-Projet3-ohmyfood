@@ -56,7 +56,7 @@
     color: $logo_color;
     text-decoration:none;
     font-family: $main_font;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
         &:hover{ 
             animation: wiggle 100ms infinite;
@@ -194,7 +194,7 @@
     width:90%;
 }
 
-@mixin lanote__line {
+@mixin lanote__deco {
     display:inline-block;
     height: 3px;
     width: 60px;
@@ -230,6 +230,29 @@
 }
 @mixin anim3 {
     background: linear-gradient(to top, $lechic_menu3 0%, $lechic_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+@mixin delice__deco {
+    display: inline-block;
+    height:3px;
+    width: 90px;
+}
+@mixin anim4 {
+    background: linear-gradient(to top, $delice_menu_gradient1 0%, $delice_menu_gradient1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+@mixin anim5 {
+    background: linear-gradient(to top, $delice_menu_gradient2 0%, $delice_menu_gradient2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;}
+}
+@mixin anim6 {
+    background: linear-gradient(to top, $delice_menu_gradient3 0%, $delice_menu_gradient3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
     &:hover{
         background-size: 100% 100%;}

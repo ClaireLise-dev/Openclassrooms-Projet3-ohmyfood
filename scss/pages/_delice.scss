@@ -1,0 +1,43 @@
+.delice__page {
+    @include delice;
+    box-shadow: $box-shadow;
+    width: 90%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto auto 30px auto;
+    h2
+    {
+        font-size: 1em;
+        font-weight: bold;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .delice__font--black {
+        color:$delice_palette_page;
+        font-family:$menu_delice_palette;
+    }
+    .delice__title--gradient {
+        font-size: 2em;
+    }
+}
+.delice__subtitle {
+    @include flex_center;
+}
+.delice__dish {
+    @include flex_space_between;
+    text-align: left;
+}
+.delice__deco {
+    @include delice__deco;
+}
+.anim4 {
+    @include anim4;
+}
+.anim5 {
+    @include anim5;
+}
+.anim6 {
+    @include anim6;
+}
+

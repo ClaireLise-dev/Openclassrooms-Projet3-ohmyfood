@@ -41,8 +41,8 @@
         width: 90%;
         margin: auto;
 }
-.lanote__line {
-   @include lanote__line;
+.lanote__deco {
+   @include lanote__deco;
 }
 .subtitle {
    display:inline;
