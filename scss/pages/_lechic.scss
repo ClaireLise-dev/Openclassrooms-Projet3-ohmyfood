@@ -21,7 +21,7 @@
     }
 }
 .lechic__subtitle {
-    @include flex_center;
+    @include flex_space_between;
 }
 .lechic__deco {
     @include lechic__deco;

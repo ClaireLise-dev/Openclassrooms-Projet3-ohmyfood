@@ -535,9 +535,13 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -740,6 +744,19 @@ section {
 
 .anim7:hover {
   background-size: 100% 100%;
+}
+
+.mentions__page {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: "kalam", cursive;
+  -webkit-box-shadow: 0 0 20px grey;
+          box-shadow: 0 0 20px grey;
+  width: 90%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto auto 30px auto;
 }
 
 body {
