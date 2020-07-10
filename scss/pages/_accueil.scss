@@ -66,12 +66,12 @@ section
     {
         font-size: 1.9em;
     }
-    @include md {
+    @include lg {
         @include flex_space_between;
     }
 }
 
-.lanote {
+.accueil__lanote {
     @include la_note;
     a {
         @include a;

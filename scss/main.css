@@ -258,8 +258,8 @@ main {
 }
 
 section {
-  width: 320px;
-  height: 390px;
+  width: 290px;
+  height: 360px;
   margin: 20px;
   text-align: center;
   display: -webkit-box;
@@ -304,7 +304,7 @@ section {
   font-size: 1.9em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -322,23 +322,23 @@ section {
   }
 }
 
-.lanote {
+.accueil__lanote {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "kalam", cursive;
 }
 
-.lanote a {
+.accueil__lanote a {
   text-decoration: none;
 }
 
-.lanote h3 {
+.accueil__lanote h3 {
   color: #3c1218;
   text-decoration: none;
   text-decoration: none;
 }
 
-.lanote h2 {
+.accueil__lanote h2 {
   color: #3c1218;
   text-decoration: none;
   font-family: "kalam", cursive;
