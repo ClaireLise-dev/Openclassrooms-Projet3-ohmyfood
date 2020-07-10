@@ -1,7 +1,7 @@
 .lechic__page {
     @include lechic;
     @include lg {
-        width: 80%;
+        width: 70%;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -46,18 +46,21 @@
     color: $lechic_menu1;
     @include lg {
         margin-bottom: 40px;
+        min-width: 740px;
     }
 }
 .lechic__font--color2 {
     color: $lechic_menu2;
     @include lg {
         margin-bottom: 40px;
+        min-width: 740px;
     }
 }
 .lechic__font--color3 {
     color: $lechic_menu3;
     @include lg {
         margin-bottom: 60px;
+        min-width:740px;
     }
 }
 .anim1 {

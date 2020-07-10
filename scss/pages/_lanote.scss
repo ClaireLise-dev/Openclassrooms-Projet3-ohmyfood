@@ -7,17 +7,10 @@
         font-size: 1.4em;
     }
 }
-
-.lanote__title {
-    @include lanote__title;
-    font-family: $lanote_title_font;
-    font-size: 3em;
-}
-
-.lanote__page {
+.lanote {
     @include la_note;
     @include lg {
-        width: 80%;
+        width: 70%;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -30,12 +23,29 @@
         font-size: 1.3em;
         font-weight: bold;
         @include lg {
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
 
     .price {
         font-weight: bold;
+    }
+    &__title {
+        @include lanote__title;
+    font-family: $lanote_title_font;
+    font-size: 3em;
+    }
+    &__subtitle {
+        @include flex_center;
+        width: 90%;
+        margin: auto;
+    }
+    &__deco {
+        @include lanote__deco;
+        @include lg {
+            width: 200px;
+            height: 8px;
+         }
     }
 }
 
@@ -45,23 +55,11 @@
         margin: auto 15px auto 0px;
     }
 }
-.lanote__subtitle {
-        @include flex_center;
-        width: 90%;
-        margin: auto;
-}
-.lanote__deco {
-   @include lanote__deco;
-   @include lg {
-       width: 300px;
-       height: 8px;
-    }
-}
 .subtitle {
-   display:inline;
-   @include line_anim ($lanote_menu);
-   margin: auto;
-    &:hover{
-        background-size: 100% 100%;
-    }
+    display:inline;
+        @include line_anim ($lanote_menu);
+        margin: auto;
+         &:hover{
+             background-size: 100% 100%;
+         }
 }

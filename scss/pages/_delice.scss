@@ -1,7 +1,7 @@
 .delice__page {
     @include delice;
     @include lg {
-        width: 80%;
+        width: 70%;
         padding-bottom: 40px;
     }
     box-shadow: $box-shadow;
