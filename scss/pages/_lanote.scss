@@ -3,6 +3,9 @@
     box-shadow: none;
     width: auto;
     height: auto;
+    @include lg {
+        font-size: 1.4em;
+    }
 }
 
 .lanote__title {
@@ -13,6 +16,9 @@
 
 .lanote__page {
     @include la_note;
+    @include lg {
+        width: 80%;
+    }
     box-shadow: $box-shadow;
     width: 90%;
     height: auto;
@@ -59,4 +65,3 @@
         background-size: 100% 100%;
     }
 }
-

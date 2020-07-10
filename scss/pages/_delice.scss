@@ -1,5 +1,9 @@
 .delice__page {
     @include delice;
+    @include lg {
+        width: 80%;
+        padding-bottom: 40px;
+    }
     box-shadow: $box-shadow;
     width: 90%;
     height: auto;
@@ -11,7 +15,7 @@
         font-size: 1.2em;
         font-weight: lighter;
         @include lg {
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
     }
     .font__black {
@@ -21,16 +25,19 @@
     .delice__title--gradient {
         font-size: 2em;
         @include lg {
-            font-size: 2.5em;
+            font-size: 4em;
         }
     }
 }
 .delice__subtitle {
     @include flex_space_between;
 }
-.delice_palette_dish {
-    @include flex_space_between;
-    text-align: center;
+.dish {
+    @include lg {
+        @include flex_space_between;
+        width: 90%;
+        margin: auto;
+    }
 }
 .delice_palette_deco {
     @include delice_palette_deco;
@@ -48,4 +55,3 @@
 .anim6 {
     @include line_anim ($delice_menu_gradient3);
 }
-

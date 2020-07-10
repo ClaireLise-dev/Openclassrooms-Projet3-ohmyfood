@@ -1,17 +1,20 @@
 .lechic__page {
     @include lechic;
+    @include lg {
+        width: 80%;
+    }
     box-shadow: $box-shadow;
     width: 90%;
     height: auto;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right:10px;
     margin: auto auto 30px auto;
     h2
     {
         font-size: 1.3em;
         font-weight: bold;
         @include lg {
-            font-size: 2em;
+            font-size: 1.6em;
             margin-left: 20px;
             margin-right: 20px;
         }
@@ -30,20 +33,32 @@
 }
 .lechic__subtitle {
     @include flex_space_between;
+    margin: auto;
 }
 .lechic__deco {
     @include lechic__deco;
     @include lg {
-        width: 300px;
+        width: 200px;
         height: 8px;
     }
 }
-
-#lechic__font--color2 {
-    color: $lechic_menu2;
+.lechic__font--color1 {
+    color: $lechic_menu1;
+    @include lg {
+        margin-bottom: 40px;
+    }
 }
-#lechic__font--color3 {
+.lechic__font--color2 {
+    color: $lechic_menu2;
+    @include lg {
+        margin-bottom: 40px;
+    }
+}
+.lechic__font--color3 {
     color: $lechic_menu3;
+    @include lg {
+        margin-bottom: 60px;
+    }
 }
 .anim1 {
     display:inline;

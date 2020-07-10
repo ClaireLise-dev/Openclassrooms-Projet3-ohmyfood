@@ -157,23 +157,6 @@ footer {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 footer h2 {
   color: #fdcb46;
   text-decoration: none;
@@ -200,6 +183,12 @@ footer h2:hover {
           animation: wiggle 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+@media (min-width: 992px) {
+  footer h2 {
+    font-size: 1.5em;
+  }
 }
 
 footer a {
@@ -481,6 +470,12 @@ section {
   height: auto;
 }
 
+@media (min-width: 992px) {
+  .title {
+    font-size: 1.4em;
+  }
+}
+
 .lanote__title {
   color: #3c1218;
   text-decoration: none;
@@ -499,6 +494,12 @@ section {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto auto 30px auto;
+}
+
+@media (min-width: 992px) {
+  .lanote__page {
+    width: 80%;
+  }
 }
 
 .lanote__page h2 {
@@ -591,6 +592,12 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 992px) {
+  .lechic__page {
+    width: 80%;
+  }
+}
+
 .lechic__page h2 {
   font-size: 1.3em;
   font-weight: bold;
@@ -598,7 +605,7 @@ section {
 
 @media (min-width: 992px) {
   .lechic__page h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -633,6 +640,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
 }
 
 .lechic__deco {
@@ -643,17 +651,39 @@ section {
 
 @media (min-width: 992px) {
   .lechic__deco {
-    width: 300px;
+    width: 200px;
     height: 8px;
   }
 }
 
-#lechic__font--color2 {
+.lechic__font--color1 {
+  color: #c77412;
+}
+
+@media (min-width: 992px) {
+  .lechic__font--color1 {
+    margin-bottom: 40px;
+  }
+}
+
+.lechic__font--color2 {
   color: #a56799;
 }
 
-#lechic__font--color3 {
+@media (min-width: 992px) {
+  .lechic__font--color2 {
+    margin-bottom: 40px;
+  }
+}
+
+.lechic__font--color3 {
   color: #6e4ccc;
+}
+
+@media (min-width: 992px) {
+  .lechic__font--color3 {
+    margin-bottom: 60px;
+  }
 }
 
 .anim1 {
@@ -707,6 +737,13 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 992px) {
+  .delice__page {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+}
+
 .delice__page h2 {
   font-size: 1.2em;
   font-weight: lighter;
@@ -714,7 +751,7 @@ section {
 
 @media (min-width: 992px) {
   .delice__page h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -729,7 +766,7 @@ section {
 
 @media (min-width: 992px) {
   .delice__page .delice__title--gradient {
-    font-size: 2.5em;
+    font-size: 4em;
   }
 }
 
@@ -749,21 +786,24 @@ section {
           align-items: center;
 }
 
-.delice_palette_dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+@media (min-width: 992px) {
+  .dish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .delice_palette_deco {
@@ -826,14 +866,21 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 992px) {
+  .palette__page {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+}
+
 .palette__page h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: lighter;
 }
 
 @media (min-width: 992px) {
   .palette__page h2 {
-    font-size: 2em;
+    font-size: 1.4em;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -850,7 +897,7 @@ section {
 
 @media (min-width: 992px) {
   .palette__page .palette__title--gradient {
-    font-size: 2.5em;
+    font-size: 4em;
   }
 }
 

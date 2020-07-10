@@ -19,11 +19,11 @@ header {
 footer {
     @include footer;
     @include flex_space_between;
-    @include md {
-        @include flex_around;
-    }
     h2 {
         @include footer_h2;
+        @include lg {
+            font-size: 1.5em;
+        }
         @include flex_space_between;
     }
     a {
