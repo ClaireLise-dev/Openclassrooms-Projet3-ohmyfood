@@ -72,7 +72,7 @@ section
 }
 
 .lanote-accueil {
-    @include la_note;
+    @include lanote;
     a {
         @include a;
     }

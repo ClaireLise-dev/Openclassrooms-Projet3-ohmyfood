@@ -8,7 +8,7 @@
     }
 }
 .lanote {
-    @include la_note;
+    @include lanote;
     @include lg {
         width: 70%;
     }

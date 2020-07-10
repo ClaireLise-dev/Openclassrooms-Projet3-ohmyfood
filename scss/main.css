@@ -322,23 +322,23 @@ section {
   }
 }
 
-.accueil__lanote {
+.lanote-accueil {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "kalam", cursive;
 }
 
-.accueil__lanote a {
+.lanote-accueil a {
   text-decoration: none;
 }
 
-.accueil__lanote h3 {
+.lanote-accueil h3 {
   color: #3c1218;
   text-decoration: none;
   text-decoration: none;
 }
 
-.accueil__lanote h2 {
+.lanote-accueil h2 {
   color: #3c1218;
   text-decoration: none;
   font-family: "kalam", cursive;
