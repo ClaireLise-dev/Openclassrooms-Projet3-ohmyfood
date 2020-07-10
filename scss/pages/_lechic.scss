@@ -10,10 +10,18 @@
     {
         font-size: 1.3em;
         font-weight: bold;
+        @include lg {
+            font-size: 2em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
     .lechic__title--gradient {
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 20px;
+        @include lg {
+            font-size: 2.5em;
+        }
     }
 
     .price {
@@ -25,11 +33,10 @@
 }
 .lechic__deco {
     @include lechic__deco;
-}
-.subtitle__lechic {
-   margin: auto;
-   padding-left: 10px;
-   padding-right: 10px;
+    @include lg {
+        width: 300px;
+        height: 8px;
+    }
 }
 
 #lechic__font--color2 {
@@ -40,13 +47,13 @@
 }
 .anim1 {
     display:inline;
-    @include anim1;
+    @include line_anim ($lechic_menu1);
 }
 .anim2 {
     display:inline;
-    @include anim2;
+    @include line_anim ($lechic_menu2);
 }
 .anim3 {
     display:inline;
-    @include anim3;
+    @include line_anim ($lechic_menu3);
 }

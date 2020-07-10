@@ -1,6 +1,10 @@
 header {
     @include header;
     @include flex_column;
+    @include lg {
+        font-size:2.3em;
+        height: 150px;
+    }
 
     h1 {
         @include header_h1;
@@ -15,8 +19,12 @@ header {
 footer {
     @include footer;
     @include flex_space_between;
+    @include md {
+        @include flex_around;
+    }
     h2 {
         @include footer_h2;
+        @include flex_space_between;
     }
     a {
         @include a_header_footer;
@@ -57,6 +65,9 @@ section
     h3
     {
         font-size: 1.9em;
+    }
+    @include md {
+        @include flex_space_between;
     }
 }
 

@@ -8,8 +8,13 @@
     margin: auto auto 30px auto;
     h2
     {
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: lighter;
+        @include lg {
+            font-size: 2em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
     .font__black {
         color:$delice_palette_page;
@@ -17,11 +22,14 @@
     }
     .palette__title--gradient {
         font-size: 2em;
+        @include lg{
+            font-size: 2.5em;
+        }
     }
 }
 .palette__subtitle {
     @include flex_space_between;
 }
 .anim7 {
-    @include anim7;
+    @include line_anim ($palette_menu_gradient1);
 }

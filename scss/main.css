@@ -57,12 +57,18 @@
 /*Autres éléments page accueil*/
 /*Eléments pages*/
 /* Animations pages*/
+/* Responsive */
 /* fonts */
 /* colors */
 /* fonts colors */
 /* gradient colors */
 /* icon colors */
 /* box shadow */
+/* Responsive */
+/* Small tablets and large smartphones (landscape view)*/
+/* Small tablets (portrait view)*/
+/* Tablets and small desktops*/
+/* Large tablets and desktops*/
 header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
@@ -82,6 +88,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  header {
+    font-size: 2.3em;
+    height: 150px;
+  }
 }
 
 header h1 {
@@ -125,9 +138,9 @@ footer {
   color: #fdcb46;
   position: -webkit-sticky;
   position: sticky;
+  bottom: 0;
   padding: 0px 10px 0px 10px;
   margin: auto;
-  bottom: 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,12 +157,42 @@ footer {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer h2 {
   color: #fdcb46;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer h2:hover {
@@ -270,6 +313,24 @@ section {
 
 .menu h3 {
   font-size: 1.9em;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .lanote {
@@ -445,6 +506,12 @@ section {
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  .lanote__page h2 {
+    font-size: 2em;
+  }
+}
+
 .lanote__page .price {
   font-weight: bold;
 }
@@ -485,6 +552,13 @@ section {
   width: 60px;
 }
 
+@media (min-width: 992px) {
+  .lanote__deco {
+    width: 300px;
+    height: 8px;
+  }
+}
+
 .subtitle {
   display: inline;
   background: -webkit-gradient(linear, left bottom, left top, from(#3c1218), color-stop(10%, #3c1218), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
@@ -522,9 +596,23 @@ section {
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  .lechic__page h2 {
+    font-size: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .lechic__page .lechic__title--gradient {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 20px;
+}
+
+@media (min-width: 992px) {
+  .lechic__page .lechic__title--gradient {
+    font-size: 2.5em;
+  }
 }
 
 .lechic__page .price {
@@ -550,13 +638,14 @@ section {
 .lechic__deco {
   display: inline-block;
   height: 3px;
-  width: 45px;
+  width: 50px;
 }
 
-.subtitle__lechic {
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+@media (min-width: 992px) {
+  .lechic__deco {
+    width: 300px;
+    height: 8px;
+  }
 }
 
 #lechic__font--color2 {
@@ -623,6 +712,12 @@ section {
   font-weight: lighter;
 }
 
+@media (min-width: 992px) {
+  .delice__page h2 {
+    font-size: 1.5em;
+  }
+}
+
 .delice__page .font__black {
   color: #000000;
   font-family: "kalam", cursive;
@@ -630,6 +725,12 @@ section {
 
 .delice__page .delice__title--gradient {
   font-size: 2em;
+}
+
+@media (min-width: 992px) {
+  .delice__page .delice__title--gradient {
+    font-size: 2.5em;
+  }
 }
 
 .delice__subtitle {
@@ -649,6 +750,19 @@ section {
 }
 
 .delice_palette_dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -656,6 +770,13 @@ section {
   display: inline-block;
   height: 3px;
   width: 80px;
+}
+
+@media (min-width: 992px) {
+  .delice_palette_deco {
+    width: 300px;
+    height: 8px;
+  }
 }
 
 .anim4 {
@@ -706,8 +827,16 @@ section {
 }
 
 .palette__page h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: lighter;
+}
+
+@media (min-width: 992px) {
+  .palette__page h2 {
+    font-size: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .palette__page .font__black {
@@ -717,6 +846,12 @@ section {
 
 .palette__page .palette__title--gradient {
   font-size: 2em;
+}
+
+@media (min-width: 992px) {
+  .palette__page .palette__title--gradient {
+    font-size: 2.5em;
+  }
 }
 
 .palette__subtitle {

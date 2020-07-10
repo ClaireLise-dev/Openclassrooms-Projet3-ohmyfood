@@ -19,6 +19,13 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex_around
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
 /*footer et header*/
 
 @mixin header
@@ -46,9 +53,9 @@
     background-color: $primary_color;
     color: $logo_color;
     position: sticky;
+    bottom:0;
     padding: 0px 10px 0px 10px;
     margin:auto;
-    bottom: 0;
     text-align: center;
 }
 
@@ -59,7 +66,7 @@
     font-family: $main_font;
     font-size: 1em;
     font-weight: 500;
-        &:hover{ 
+        &:hover{
             animation: wiggle 100ms infinite;
             animation-timing-function: linear;
           }
@@ -203,7 +210,7 @@
 @mixin lechic__deco {
     display: inline-block;
     height:3px;
-    width: 45px;
+    width: 50px;
 }
 @mixin delice_palette_deco {
     display: inline-block;
@@ -212,53 +219,34 @@
 }
 
 /* Animations pages*/
-@mixin lanote_anim {
-    background: linear-gradient(to top, $lanote_menu 0%, $lanote_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+@mixin line_anim ($color) {
+    background: linear-gradient(to top, $color 0%, $color 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
     &:hover{
         background-size: 100% 100%;
     }
 }
-@mixin anim1 {
-    background: linear-gradient(to top, $lechic_menu1 0%, $lechic_menu1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
+/* Responsive */
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
 
-@mixin anim2 {
-    background: linear-gradient(to top, $lechic_menu2 0%, $lechic_menu2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
-@mixin anim3 {
-    background: linear-gradient(to top, $lechic_menu3 0%, $lechic_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
-@mixin anim4 {
-    background: linear-gradient(to top, $delice_menu_gradient1 0%, $delice_menu_gradient1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
-@mixin anim5 {
-    background: linear-gradient(to top, $delice_menu_gradient2 0%, $delice_menu_gradient2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
-@mixin anim6 {
-    background: linear-gradient(to top, $delice_menu_gradient3 0%, $delice_menu_gradient3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
-@mixin anim7 {
-    background: linear-gradient(to top, $palette_menu_gradient1 0%, $palette_menu_gradient1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .3s;
-    &:hover{
-        background-size: 100% 100%;}
-}
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }

@@ -10,6 +10,9 @@
     {
         font-size: 1.2em;
         font-weight: lighter;
+        @include lg {
+            font-size: 1.5em;
+        }
     }
     .font__black {
         color:$delice_palette_page;
@@ -17,24 +20,32 @@
     }
     .delice__title--gradient {
         font-size: 2em;
+        @include lg {
+            font-size: 2.5em;
+        }
     }
 }
 .delice__subtitle {
     @include flex_space_between;
 }
 .delice_palette_dish {
+    @include flex_space_between;
     text-align: center;
 }
 .delice_palette_deco {
     @include delice_palette_deco;
+    @include lg {
+        width: 300px;
+        height: 8px;
+    }
 }
 .anim4 {
-    @include anim4;
+@include line_anim ($delice_menu_gradient1);
 }
 .anim5 {
-    @include anim5;
+    @include line_anim ($delice_menu_gradient2);
 }
 .anim6 {
-    @include anim6;
+    @include line_anim ($delice_menu_gradient3);
 }
 
