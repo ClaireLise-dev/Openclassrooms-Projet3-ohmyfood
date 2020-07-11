@@ -86,7 +86,7 @@
     color: $logo_color;
     width: 260px;
     height: 40px;
-    margin: auto;
+    margin: 10px;
     text-align: center;
     border-radius: 10px;
 }
@@ -103,15 +103,21 @@
 {
     background-color: $secondary_color;
     margin: auto;
-    padding-bottom: 20px;
+    @include md {
+        min-height: 860px;
+    }
 }
 
 @mixin section
 {
-    width: 340px;
-    height: 410px;
+    width: 270px;
+    height: 330px;
     margin: 20px;
     text-align: center;
+    @include lg {
+    width: 340px;
+    height: 410px;
+    }
 }
 
 @mixin lanote

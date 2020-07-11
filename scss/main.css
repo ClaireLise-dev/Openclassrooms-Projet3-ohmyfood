@@ -65,7 +65,7 @@
 /* icon colors */
 /* box shadow */
 /* Responsive */
-/* Small tablets and large smartphones (landscape view)*/
+/* Small tablets and large smartphones */
 /* Small tablets (portrait view)*/
 /* Tablets and small desktops*/
 /* Large tablets and desktops*/
@@ -213,7 +213,7 @@ aside {
   color: #fdcb46;
   width: 260px;
   height: 40px;
-  margin: auto;
+  margin: 10px;
   text-align: center;
   border-radius: 10px;
   display: -webkit-box;
@@ -241,7 +241,6 @@ aside {
 main {
   background-color: #ffffff;
   margin: auto;
-  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,9 +256,15 @@ main {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  main {
+    min-height: 860px;
+  }
+}
+
 section {
-  width: 340px;
-  height: 410px;
+  width: 270px;
+  height: 330px;
   margin: 20px;
   text-align: center;
   display: -webkit-box;
@@ -279,6 +284,13 @@ section {
           box-shadow: 0 0 20px grey;
 }
 
+@media (min-width: 992px) {
+  section {
+    width: 340px;
+    height: 410px;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +306,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px;
+  width: auto;
 }
 
 .menu h2 {
@@ -316,6 +329,23 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -489,7 +519,7 @@ section {
   margin: auto auto 30px auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .lanote {
     width: 70%;
   }
@@ -500,7 +530,7 @@ section {
   font-weight: bold;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .lanote h2 {
     font-size: 1.5em;
   }

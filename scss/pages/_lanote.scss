@@ -8,9 +8,9 @@
     }
 }
 .lanote {
-    @include lanote;
-    @include lg {
-        width: 70%;
+    @include lanote; 
+    @include md {
+        width:70%;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -22,7 +22,7 @@
     {
         font-size: 1.3em;
         font-weight: bold;
-        @include lg {
+        @include md {
             font-size: 1.5em;
         }
     }
