@@ -1,4 +1,4 @@
-.delice__page {
+.delice {
     @include delice;
     @include lg {
         width: 70%;
@@ -28,9 +28,9 @@
             font-size: 4em;
         }
     }
-}
-.delice__subtitle {
-    @include flex_space_between;
+    &__subtitle {
+        @include flex_space_between;
+    }
 }
 .dish {
     @include lg {

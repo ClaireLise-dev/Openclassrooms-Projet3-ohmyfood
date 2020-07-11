@@ -1,4 +1,4 @@
-.lechic__page {
+.lechic {
     @include lechic;
     @include lg {
         width: 70%;
@@ -19,48 +19,47 @@
             margin-right: 20px;
         }
     }
-    .lechic__title--gradient {
+    .price {
+        font-weight: bold;
+    }
+    &__title--gradient {
         font-size: 2em;
         padding: 20px;
         @include lg {
             font-size: 2.5em;
         }
     }
-
-    .price {
-        font-weight: bold;
+    &__subtitle {
+        @include flex_space_between;
+        margin: auto;
     }
-}
-.lechic__subtitle {
-    @include flex_space_between;
-    margin: auto;
-}
-.lechic__deco {
-    @include lechic__deco;
-    @include lg {
-        width: 200px;
-        height: 8px;
+    &__deco {
+        @include lechic__deco;
+        @include lg {
+            width: 200px;
+            height: 8px;
+        }
     }
-}
-.lechic__font--color1 {
-    color: $lechic_menu1;
-    @include lg {
-        margin-bottom: 40px;
-        min-width: 740px;
+    &__font--color1 {
+        color: $lechic_menu1;
+        @include lg {
+            margin-bottom: 40px;
+            min-width: 740px;
+        }
     }
-}
-.lechic__font--color2 {
-    color: $lechic_menu2;
-    @include lg {
-        margin-bottom: 40px;
-        min-width: 740px;
+    &__font--color2 {
+        color: $lechic_menu2;
+        @include lg {
+            margin-bottom: 40px;
+            min-width: 740px;
+        }
     }
-}
-.lechic__font--color3 {
-    color: $lechic_menu3;
-    @include lg {
-        margin-bottom: 60px;
-        min-width:740px;
+    &__font--color3 {
+        color: $lechic_menu3;
+        @include lg {
+            margin-bottom: 60px;
+            min-width:740px;
+        }
     }
 }
 .anim1 {

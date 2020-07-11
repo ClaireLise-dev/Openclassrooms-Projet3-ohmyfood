@@ -75,7 +75,7 @@ section
     }
 }
 
-.lanote-accueil {
+.menu__lanote {
     @include lanote;
     a {
         @include a;
@@ -93,7 +93,7 @@ section
         @include lanote__icon;
         @include fas;
 }
-.lechic {
+.menu__lechic {
         @include lechic;
         a{
             @include a
@@ -107,7 +107,7 @@ section
     @include lechic__title--gradient;
 
 }
-.delice {
+.menu__delice {
 
     @include delice;
     a {
@@ -121,7 +121,7 @@ section
 .delice__title--gradient {
     @include delice__title--gradient;
 }
-.palette {
+.menu__palette {
     @include palette;
     a {
         @include a

@@ -352,23 +352,23 @@ section {
   }
 }
 
-.lanote-accueil {
+.menu__lanote {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "kalam", cursive;
 }
 
-.lanote-accueil a {
+.menu__lanote a {
   text-decoration: none;
 }
 
-.lanote-accueil h3 {
+.menu__lanote h3 {
   color: #3c1218;
   text-decoration: none;
   text-decoration: none;
 }
 
-.lanote-accueil h2 {
+.menu__lanote h2 {
   color: #3c1218;
   text-decoration: none;
   font-family: "kalam", cursive;
@@ -385,7 +385,7 @@ section {
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
-.lechic {
+.menu__lechic {
   background-color: #fff5fe;
   color: #c77412;
   font-family: "Source Serif Pro", serif;
@@ -393,11 +393,11 @@ section {
   text-decoration: none;
 }
 
-.lechic a {
+.menu__lechic a {
   text-decoration: none;
 }
 
-.lechic h2 {
+.menu__lechic h2 {
   color: #c77412;
 }
 
@@ -413,7 +413,7 @@ section {
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
 }
 
-.delice {
+.menu__delice {
   background-color: #f9f9f9;
   color: #2b91f8;
   font-family: "Dancing Script", cursive;
@@ -421,11 +421,11 @@ section {
   text-decoration: none;
 }
 
-.delice a {
+.menu__delice a {
   text-decoration: none;
 }
 
-.delice h2 {
+.menu__delice h2 {
   font-family: "kalam", cursive;
   font-weight: lighter;
 }
@@ -438,18 +438,18 @@ section {
   background-image: linear-gradient(0.25turn, #0431df, #518cf0, #0887fb);
 }
 
-.palette {
+.menu__palette {
   background-color: #fdfffd;
   color: #72bf56;
   font-family: "Kaushan Script", cursive;
   text-decoration: none;
 }
 
-.palette a {
+.menu__palette a {
   text-decoration: none;
 }
 
-.palette h2 {
+.menu__palette h2 {
   color: #72bf56;
   font-family: "kalam", cursive;
   font-weight: lighter;
@@ -586,7 +586,7 @@ section {
           align-items: center;
 }
 
-.bottom__title .lanote__icon {
+.bottom__title .fas {
   margin: auto 15px auto 0px;
 }
 
@@ -607,7 +607,7 @@ section {
   background-size: 100% 100%;
 }
 
-.lechic__page {
+.lechic {
   background-color: #fff5fe;
   color: #c77412;
   font-family: "Source Serif Pro", serif;
@@ -623,37 +623,37 @@ section {
 }
 
 @media (min-width: 992px) {
-  .lechic__page {
+  .lechic {
     width: 70%;
   }
 }
 
-.lechic__page h2 {
+.lechic h2 {
   font-size: 1.3em;
   font-weight: bold;
 }
 
 @media (min-width: 992px) {
-  .lechic__page h2 {
+  .lechic h2 {
     font-size: 1.6em;
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-.lechic__page .lechic__title--gradient {
+.lechic .price {
+  font-weight: bold;
+}
+
+.lechic__title--gradient {
   font-size: 2em;
   padding: 20px;
 }
 
 @media (min-width: 992px) {
-  .lechic__page .lechic__title--gradient {
+  .lechic__title--gradient {
     font-size: 2.5em;
   }
-}
-
-.lechic__page .price {
-  font-weight: bold;
 }
 
 .lechic__subtitle {
@@ -755,7 +755,7 @@ section {
   background-size: 100% 100%;
 }
 
-.delice__page {
+.delice {
   background-color: #f9f9f9;
   color: #2b91f8;
   font-family: "Dancing Script", cursive;
@@ -771,34 +771,34 @@ section {
 }
 
 @media (min-width: 992px) {
-  .delice__page {
+  .delice {
     width: 70%;
     padding-bottom: 40px;
   }
 }
 
-.delice__page h2 {
+.delice h2 {
   font-size: 1.2em;
   font-weight: lighter;
 }
 
 @media (min-width: 992px) {
-  .delice__page h2 {
+  .delice h2 {
     font-size: 1.4em;
   }
 }
 
-.delice__page .font__black {
+.delice .font__black {
   color: #000000;
   font-family: "kalam", cursive;
 }
 
-.delice__page .delice__title--gradient {
+.delice .delice__title--gradient {
   font-size: 2em;
 }
 
 @media (min-width: 992px) {
-  .delice__page .delice__title--gradient {
+  .delice .delice__title--gradient {
     font-size: 4em;
   }
 }
@@ -885,7 +885,7 @@ section {
   background-size: 100% 100%;
 }
 
-.palette__page {
+.palette {
   background-color: #fdfffd;
   color: #72bf56;
   font-family: "Kaushan Script", cursive;
@@ -900,36 +900,36 @@ section {
 }
 
 @media (min-width: 992px) {
-  .palette__page {
+  .palette {
     width: 70%;
     padding-bottom: 40px;
   }
 }
 
-.palette__page h2 {
+.palette h2 {
   font-size: 1.2em;
   font-weight: lighter;
 }
 
 @media (min-width: 992px) {
-  .palette__page h2 {
+  .palette h2 {
     font-size: 1.4em;
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-.palette__page .font__black {
+.palette .font__black {
   color: #000000;
   font-family: "kalam", cursive;
 }
 
-.palette__page .palette__title--gradient {
+.palette .palette__title--gradient {
   font-size: 2em;
 }
 
 @media (min-width: 992px) {
-  .palette__page .palette__title--gradient {
+  .palette .palette__title--gradient {
     font-size: 4em;
   }
 }

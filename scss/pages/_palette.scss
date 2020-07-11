@@ -1,5 +1,5 @@
 
-.palette__page {
+.palette {
     @include palette;
     @include lg {
         width: 70%;
@@ -31,9 +31,9 @@
             font-size: 4em;
         }
     }
-}
-.palette__subtitle {
-    @include flex_space_between;
+    &__subtitle {
+        @include flex_space_between;
+    }
 }
 .anim7 {
     @include line_anim ($palette_menu_gradient1);
