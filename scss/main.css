@@ -161,8 +161,7 @@ footer h2 {
   color: #fdcb46;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  font-weight: 500;
+  font-weight: lighter;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +175,7 @@ footer h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1em;
 }
 
 footer h2:hover {
@@ -310,28 +310,22 @@ section {
 }
 
 .menu h2 {
-  font-size: 2.3em;
-}
-
-.menu h3 {
-  font-size: 1.9em;
+  font-size: 1.8em;
 }
 
 @media (min-width: 992px) {
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .menu h2 {
+    font-size: 2.1em;
+  }
+}
+
+.menu h3 {
+  font-size: 1.6em;
+}
+
+@media (min-width: 992px) {
+  .menu h3 {
+    font-size: 1.9em;
   }
 }
 
@@ -344,8 +338,9 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -403,15 +398,11 @@ section {
 
 .menu .lechic__title--gradient {
   font-family: "Croissant One", serif;
-  font-size: small;
-  padding-right: 20px;
-  padding-left: 20px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
-  font-size: 2em;
 }
 
 .menu__delice {
@@ -469,13 +460,6 @@ section {
           transform: scale(1.3);
   -webkit-transition: all ease 600ms;
   transition: all ease 600ms;
-}
-
-@media (min-width: 768px) {
-  .zoom {
-    -webkit-transform: scale 1.1;
-            transform: scale 1.1;
-  }
 }
 
 .loading__dot1 {
@@ -693,16 +677,12 @@ section {
 
 .lechic__title--gradient {
   font-family: "Croissant One", serif;
-  font-size: small;
-  padding-right: 20px;
-  padding-left: 20px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
   font-size: 2em;
-  padding: 20px;
 }
 
 @media (min-width: 992px) {
@@ -881,6 +861,11 @@ section {
 }
 
 .delice__title--gradient {
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), color-stop(#518cf0), to(#0887fb));
+  background-image: linear-gradient(0.25turn, #0431df, #518cf0, #0887fb);
   font-size: 2em;
 }
 
@@ -1030,6 +1015,11 @@ section {
 }
 
 .palette__title--gradient {
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
   font-size: 2em;
 }
 
@@ -1097,6 +1087,10 @@ body {
 
 h1 {
   font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.7em;
 }
 
 h3 {

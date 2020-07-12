@@ -22,6 +22,7 @@ footer {
     h2 {
         @include footer_h2;
         @include flex_space_between;
+        font-size:1em;
         @include md {
             font-size: 1.5em;
         }
@@ -57,21 +58,21 @@ section
     @include flex_column;
     margin: 10px;
     width: auto;
-
-    h2
-    {
-        font-size: 2.3em;
+    h2 {
+        font-size: 1.8em;
+        @include lg {
+            font-size: 2.1em;
+        }
+    }
+    h3 {
+        font-size: 1.6em;
+        @include lg {
+            font-size: 1.9em;
+        }
     }
 
-    h3
-    {
-        font-size: 1.9em;
-    }
-    @include lg {
-        @include flex_space_between;
-    }
     @include md {
-        @include flex_around;
+        @include flex_space_between;
     }
 
 &__lanote {
@@ -102,11 +103,8 @@ section
         }
 }
 .lechic__title--gradient{
-
     @include lechic__title--gradient;
-    font-size: 2em;
-
-}
+    }
 &__delice {
 
     @include delice;
@@ -138,9 +136,6 @@ section
 }
 .zoom {
     @include zoom;
-    @include md {
-        transform: scale (1.1);
-    }
 }
 .loading {
     &__dot1 {

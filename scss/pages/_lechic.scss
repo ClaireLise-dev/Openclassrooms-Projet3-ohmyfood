@@ -28,7 +28,6 @@
     &__title--gradient {
         @include lechic__title--gradient;
         font-size: 2em;
-        padding: 20px;
         @include lg {
             font-size: 2.5em;
         }

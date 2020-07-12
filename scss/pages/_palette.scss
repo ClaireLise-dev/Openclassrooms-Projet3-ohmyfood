@@ -31,6 +31,7 @@
         font-family:$menu_delice_palette;
     }
     &__title--gradient {
+        @include palette__title--gradient;
         font-size: 2em;
         @include lg{
             font-size: 3em;

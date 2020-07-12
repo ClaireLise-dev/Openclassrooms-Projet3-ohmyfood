@@ -64,8 +64,7 @@
     color: $logo_color;
     text-decoration:none;
     font-family: $main_font;
-    font-size: 1em;
-    font-weight: 500;
+    font-weight: lighter;
         &:hover{
             animation: wiggle 100ms infinite;
             animation-timing-function: linear;
@@ -161,9 +160,6 @@
 
 @mixin lechic__title--gradient {
     font-family: $lechic_title_font;
-    font-size: small;
-    padding-right: 20px;
-    padding-left: 20px;
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
