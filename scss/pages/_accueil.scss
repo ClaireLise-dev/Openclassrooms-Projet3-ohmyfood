@@ -138,6 +138,9 @@ section
 }
 .zoom {
     @include zoom;
+    @include md {
+        transform: scale (1.1);
+    }
 }
 .loading {
     &__dot1 {

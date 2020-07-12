@@ -471,6 +471,13 @@ section {
   transition: all ease 600ms;
 }
 
+@media (min-width: 768px) {
+  .zoom {
+    -webkit-transform: scale 1.1;
+            transform: scale 1.1;
+  }
+}
+
 .loading__dot1 {
   -webkit-animation: dots 2s infinite ease-in-out;
           animation: dots 2s infinite ease-in-out;
