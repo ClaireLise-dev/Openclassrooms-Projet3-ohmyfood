@@ -64,7 +64,7 @@
     color: $logo_color;
     text-decoration:none;
     font-family: $main_font;
-    font-weight: lighter;
+    font-weight: 400;
         &:hover{
             animation: wiggle 100ms infinite;
             animation-timing-function: linear;

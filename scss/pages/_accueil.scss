@@ -22,7 +22,7 @@ footer {
     h2 {
         @include footer_h2;
         @include flex_space_between;
-        font-size:1em;
+        font-size:1.2em;
         @include md {
             font-size: 1.5em;
         }
