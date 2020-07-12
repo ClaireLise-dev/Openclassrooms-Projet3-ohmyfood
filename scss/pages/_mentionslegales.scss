@@ -1,6 +1,12 @@
 .mentions__page{
     @include lanote;
     box-shadow: $box-shadow;
+    @include md {
+        width:80%;
+    }
+    @include lg {
+        width: 70%;
+    }
     width: 90%;
     height: auto;
     padding-left: 10px;

@@ -1,5 +1,8 @@
 .delice {
     @include delice;
+    @include md {
+        width: 80%;
+    }
     @include lg {
         width: 70%;
         padding-bottom: 40px;
@@ -14,7 +17,7 @@
     {
         font-size: 1.2em;
         font-weight: lighter;
-        @include lg {
+        @include md {
             font-size: 1.4em;
         }
     }
@@ -22,7 +25,7 @@
         color:$delice_palette_page;
         font-family:$menu_delice_palette;
     }
-    .delice__title--gradient {
+    &__title--gradient {
         font-size: 2em;
         @include lg {
             font-size: 4em;
@@ -41,6 +44,10 @@
 }
 .delice_palette_deco {
     @include delice_palette_deco;
+    @include md {
+        width: 200px;
+        height: 6px;
+    }
     @include lg {
         width: 300px;
         height: 8px;

@@ -185,7 +185,7 @@ footer h2:hover {
           animation-timing-function: linear;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   footer h2 {
     font-size: 1.5em;
   }
@@ -374,7 +374,7 @@ section {
   font-family: "kalam", cursive;
 }
 
-.fas {
+.menu .fas {
   font-size: 1.5em;
   display: inline-block;
   padding: 5px;
@@ -385,7 +385,7 @@ section {
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
-.menu__lechic {
+.menu .menu__lechic {
   background-color: #fff5fe;
   color: #c77412;
   font-family: "Source Serif Pro", serif;
@@ -393,15 +393,15 @@ section {
   text-decoration: none;
 }
 
-.menu__lechic a {
+.menu .menu__lechic a {
   text-decoration: none;
 }
 
-.menu__lechic h2 {
+.menu .menu__lechic h2 {
   color: #c77412;
 }
 
-.lechic__title--gradient {
+.menu .lechic__title--gradient {
   font-family: "Croissant One", serif;
   font-size: small;
   padding-right: 20px;
@@ -411,6 +411,7 @@ section {
   color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+  font-size: 2em;
 }
 
 .menu__delice {
@@ -430,7 +431,7 @@ section {
   font-weight: lighter;
 }
 
-.delice__title--gradient {
+.menu .delice__title--gradient {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -455,7 +456,7 @@ section {
   font-weight: lighter;
 }
 
-.palette__title--gradient {
+.menu .palette__title--gradient {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -470,13 +471,13 @@ section {
   transition: all ease 600ms;
 }
 
-.loading .loading__dot1 {
+.loading__dot1 {
   -webkit-animation: dots 2s infinite ease-in-out;
           animation: dots 2s infinite ease-in-out;
   font-size: 2em;
 }
 
-.loading .loading__dot2 {
+.loading__dot2 {
   -webkit-animation: dots 2s infinite ease-in-out;
           animation: dots 2s infinite ease-in-out;
   -webkit-animation-delay: 0.4s;
@@ -484,7 +485,7 @@ section {
   font-size: 2em;
 }
 
-.loading .loading__dot3 {
+.loading__dot3 {
   -webkit-animation: dots 2s infinite ease-in-out;
           animation: dots 2s infinite ease-in-out;
   -webkit-animation-delay: 0.6s;
@@ -498,6 +499,12 @@ section {
           box-shadow: none;
   width: auto;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -521,7 +528,7 @@ section {
 
 @media (min-width: 768px) {
   .lanote {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -532,7 +539,7 @@ section {
 
 @media (min-width: 768px) {
   .lanote h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 }
 
@@ -545,6 +552,17 @@ section {
   text-decoration: none;
   font-family: "Devonshire", cursive;
   font-size: 3em;
+}
+
+.lanote__title .fas {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f04a5e), to(#f78f6a));
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
 .lanote__subtitle {
@@ -567,6 +585,13 @@ section {
   width: 60px;
 }
 
+@media (min-width: 768px) {
+  .lanote__deco {
+    width: 120px;
+    height: 6px;
+  }
+}
+
 @media (min-width: 992px) {
   .lanote__deco {
     width: 200px;
@@ -587,6 +612,14 @@ section {
 }
 
 .bottom__title .fas {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f04a5e), to(#f78f6a));
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
   margin: auto 15px auto 0px;
 }
 
@@ -622,15 +655,21 @@ section {
   margin: auto auto 30px auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .lechic {
-    width: 70%;
+    width: 80%;
   }
 }
 
 .lechic h2 {
   font-size: 1.3em;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .lechic h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -646,6 +685,15 @@ section {
 }
 
 .lechic__title--gradient {
+  font-family: "Croissant One", serif;
+  font-size: small;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
+  background-image: linear-gradient(0.25turn, #c77412, #905bfd);
   font-size: 2em;
   padding: 20px;
 }
@@ -679,6 +727,13 @@ section {
   width: 50px;
 }
 
+@media (min-width: 768px) {
+  .lechic__deco {
+    width: 120px;
+    height: 6px;
+  }
+}
+
 @media (min-width: 992px) {
   .lechic__deco {
     width: 200px;
@@ -688,6 +743,12 @@ section {
 
 .lechic__font--color1 {
   color: #c77412;
+}
+
+@media (min-width: 768px) {
+  .lechic__font--color1 {
+    min-width: 550px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -701,6 +762,12 @@ section {
   color: #a56799;
 }
 
+@media (min-width: 768px) {
+  .lechic__font--color2 {
+    min-width: 550px;
+  }
+}
+
 @media (min-width: 992px) {
   .lechic__font--color2 {
     margin-bottom: 40px;
@@ -710,6 +777,13 @@ section {
 
 .lechic__font--color3 {
   color: #6e4ccc;
+}
+
+@media (min-width: 768px) {
+  .lechic__font--color3 {
+    margin-bottom: 40px;
+    min-width: 550px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -770,6 +844,12 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 768px) {
+  .delice {
+    width: 80%;
+  }
+}
+
 @media (min-width: 992px) {
   .delice {
     width: 70%;
@@ -782,7 +862,7 @@ section {
   font-weight: lighter;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .delice h2 {
     font-size: 1.4em;
   }
@@ -793,12 +873,12 @@ section {
   font-family: "kalam", cursive;
 }
 
-.delice .delice__title--gradient {
+.delice__title--gradient {
   font-size: 2em;
 }
 
 @media (min-width: 992px) {
-  .delice .delice__title--gradient {
+  .delice__title--gradient {
     font-size: 4em;
   }
 }
@@ -843,6 +923,13 @@ section {
   display: inline-block;
   height: 3px;
   width: 80px;
+}
+
+@media (min-width: 768px) {
+  .delice_palette_deco {
+    width: 200px;
+    height: 6px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -899,6 +986,12 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 768px) {
+  .palette {
+    width: 80%;
+  }
+}
+
 @media (min-width: 992px) {
   .palette {
     width: 70%;
@@ -911,9 +1004,14 @@ section {
   font-weight: lighter;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .palette h2 {
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 992px) {
+  .palette h2 {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -924,13 +1022,13 @@ section {
   font-family: "kalam", cursive;
 }
 
-.palette .palette__title--gradient {
+.palette__title--gradient {
   font-size: 2em;
 }
 
 @media (min-width: 992px) {
-  .palette .palette__title--gradient {
-    font-size: 4em;
+  .palette__title--gradient {
+    font-size: 3em;
   }
 }
 
@@ -974,16 +1072,24 @@ section {
   margin: auto auto 30px auto;
 }
 
+@media (min-width: 768px) {
+  .mentions__page {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .mentions__page {
+    width: 70%;
+  }
+}
+
 body {
   margin: auto;
 }
 
 h1 {
   font-size: 2.5em;
-}
-
-h2 {
-  font-size: 1.7em;
 }
 
 h3 {

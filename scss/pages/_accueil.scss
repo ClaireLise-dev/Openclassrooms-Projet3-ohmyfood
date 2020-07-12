@@ -21,10 +21,10 @@ footer {
     @include flex_space_between;
     h2 {
         @include footer_h2;
-        @include lg {
+        @include flex_space_between;
+        @include md {
             font-size: 1.5em;
         }
-        @include flex_space_between;
     }
     a {
         @include a_header_footer;
@@ -73,9 +73,8 @@ section
     @include md {
         @include flex_around;
     }
-}
 
-.menu__lanote {
+&__lanote {
     @include lanote;
     a {
         @include a;
@@ -105,9 +104,10 @@ section
 .lechic__title--gradient{
 
     @include lechic__title--gradient;
+    font-size: 2em;
 
 }
-.menu__delice {
+&__delice {
 
     @include delice;
     a {
@@ -121,7 +121,7 @@ section
 .delice__title--gradient {
     @include delice__title--gradient;
 }
-.menu__palette {
+&__palette {
     @include palette;
     a {
         @include a
@@ -135,20 +135,21 @@ section
 .palette__title--gradient {
     @include palette__title--gradient;
 }
+}
 .zoom {
     @include zoom;
 }
 .loading {
-    .loading__dot1 {
+    &__dot1 {
         animation: dots 2s infinite ease-in-out;
         font-size: 2em;
     }
-    .loading__dot2 {
+    &__dot2 {
         animation: dots 2s infinite ease-in-out;
         animation-delay: 0.4s;
         font-size: 2em;
     }
-    .loading__dot3 {
+    &__dot3 {
         animation: dots 2s infinite ease-in-out;
         animation-delay: 0.6s;
         font-size: 2em;

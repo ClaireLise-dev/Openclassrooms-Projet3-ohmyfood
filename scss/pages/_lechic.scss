@@ -1,7 +1,7 @@
 .lechic {
     @include lechic;
-    @include lg {
-        width: 70%;
+    @include md {
+        width: 80%;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -13,6 +13,9 @@
     {
         font-size: 1.3em;
         font-weight: bold;
+        @include md {
+            font-size: 1.5em;
+        }
         @include lg {
             font-size: 1.6em;
             margin-left: 20px;
@@ -23,6 +26,7 @@
         font-weight: bold;
     }
     &__title--gradient {
+        @include lechic__title--gradient;
         font-size: 2em;
         padding: 20px;
         @include lg {
@@ -35,6 +39,10 @@
     }
     &__deco {
         @include lechic__deco;
+        @include md {
+            width:120px;
+            height: 6px;
+        }
         @include lg {
             width: 200px;
             height: 8px;
@@ -42,6 +50,9 @@
     }
     &__font--color1 {
         color: $lechic_menu1;
+        @include md {
+            min-width: 550px;
+        }
         @include lg {
             margin-bottom: 40px;
             min-width: 740px;
@@ -49,6 +60,9 @@
     }
     &__font--color2 {
         color: $lechic_menu2;
+        @include md {
+            min-width: 550px;
+        }
         @include lg {
             margin-bottom: 40px;
             min-width: 740px;
@@ -56,6 +70,10 @@
     }
     &__font--color3 {
         color: $lechic_menu3;
+        @include md {
+            margin-bottom: 40px;
+            min-width: 550px;
+        }
         @include lg {
             margin-bottom: 60px;
             min-width:740px;

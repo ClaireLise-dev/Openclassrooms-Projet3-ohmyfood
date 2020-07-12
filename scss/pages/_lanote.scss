@@ -3,6 +3,9 @@
     box-shadow: none;
     width: auto;
     height: auto;
+    @include md {
+        font-size: 1.2em;
+    }
     @include lg {
         font-size: 1.4em;
     }
@@ -10,7 +13,7 @@
 .lanote {
     @include lanote;
     @include md {
-        width:70%;
+        width:80%;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -23,7 +26,7 @@
         font-size: 1.3em;
         font-weight: bold;
         @include md {
-            font-size: 1.5em;
+            font-size: 1.6em;
         }
     }
 
@@ -34,6 +37,10 @@
         @include lanote__title;
     font-family: $lanote_title_font;
     font-size: 3em;
+    .fas {
+        @include lanote__icon;
+        @include fas;
+    }
     }
     &__subtitle {
         @include flex_center;
@@ -42,6 +49,10 @@
     }
     &__deco {
         @include lanote__deco;
+        @include md {
+            width: 120px;
+            height: 6px;
+        }
         @include lg {
             width: 200px;
             height: 8px;
@@ -52,6 +63,8 @@
 .bottom__title {
     @include flex_center;
     .fas {
+        @include lanote__icon;
+        @include fas;
         margin: auto 15px auto 0px;
     }
 }
