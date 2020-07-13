@@ -5,7 +5,7 @@
     }
     @include lg {
         width: 70%;
-        padding-bottom: 40px;
+        padding-bottom: 90px;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -21,6 +21,12 @@
             font-size: 1.4em;
         }
     }
+    h3 {
+        margin: 40px;
+        @include lg {
+        margin: 90px;
+        }
+    } 
     .font__black {
         color:$delice_palette_page;
         font-family:$menu_delice_palette;

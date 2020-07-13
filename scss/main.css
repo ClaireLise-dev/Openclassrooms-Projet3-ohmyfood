@@ -661,6 +661,13 @@ section {
   }
 }
 
+@media (min-width: 992px) {
+  .lechic {
+    width: 70%;
+    padding-bottom: 90px;
+  }
+}
+
 .lechic h2 {
   font-size: 1.3em;
   font-weight: bold;
@@ -677,6 +684,16 @@ section {
     font-size: 1.6em;
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+.lechic h3 {
+  margin: 40px;
+}
+
+@media (min-width: 992px) {
+  .lechic h3 {
+    margin: 90px;
   }
 }
 
@@ -849,7 +866,7 @@ section {
 @media (min-width: 992px) {
   .delice {
     width: 70%;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
   }
 }
 
@@ -861,6 +878,16 @@ section {
 @media (min-width: 768px) {
   .delice h2 {
     font-size: 1.4em;
+  }
+}
+
+.delice h3 {
+  margin: 40px;
+}
+
+@media (min-width: 992px) {
+  .delice h3 {
+    margin: 90px;
   }
 }
 
@@ -996,7 +1023,7 @@ section {
 @media (min-width: 992px) {
   .palette {
     width: 70%;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
   }
 }
 
@@ -1015,6 +1042,16 @@ section {
   .palette h2 {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+.palette h3 {
+  margin: 40px;
+}
+
+@media (min-width: 992px) {
+  .palette h3 {
+    margin: 90px;
   }
 }
 

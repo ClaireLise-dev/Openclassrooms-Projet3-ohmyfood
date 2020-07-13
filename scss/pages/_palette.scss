@@ -6,7 +6,7 @@
     }
     @include lg {
         width: 70%;
-        padding-bottom: 40px;
+        padding-bottom: 90px;
     }
     box-shadow: $box-shadow;
     width: 90%;
@@ -24,6 +24,12 @@
         @include lg {
             margin-left: 20px;
             margin-right: 20px;
+        }
+    }
+    h3 {
+        margin: 40px;
+        @include lg {
+        margin: 90px;
         }
     }
     .font__black {
