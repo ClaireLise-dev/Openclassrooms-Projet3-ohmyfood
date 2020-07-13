@@ -93,7 +93,7 @@ section
         @include lanote__icon;
         @include fas;
 }
-.menu__lechic {
+&__lechic {
         @include lechic;
         a{
             @include a
@@ -101,10 +101,12 @@ section
         h2 {
             color: $lechic_menu1;
         }
+        .lechic__title--gradient {
+            @include lg{
+            font-size: 1.5em;
+            }
+        }
 }
-.lechic__title--gradient{
-    @include lechic__title--gradient;
-    }
 &__delice {
 
     @include delice;
@@ -115,9 +117,9 @@ section
         font-family: $menu_delice_palette;
         font-weight: lighter;
     }
-}
-.delice__title--gradient {
-    @include delice__title--gradient;
+    &__title--gradient {
+        @include delice__title--gradient;
+    }
 }
 &__palette {
     @include palette;
@@ -129,10 +131,11 @@ section
         font-family: $menu_delice_palette;
         font-weight: lighter;
     }
+    &__title--gradient {
+        @include palette__title--gradient;
+    }
 }
-.palette__title--gradient {
-    @include palette__title--gradient;
-}
+
 }
 .zoom {
     @include zoom;

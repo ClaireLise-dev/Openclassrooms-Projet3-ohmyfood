@@ -213,7 +213,7 @@ aside {
   color: #fdcb46;
   width: 260px;
   height: 40px;
-  margin: 10px;
+  margin: 30px;
   text-align: center;
   border-radius: 10px;
   display: -webkit-box;
@@ -229,6 +229,12 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  aside {
+    margin: 50px;
+  }
 }
 
 .loading {
@@ -262,6 +268,12 @@ main {
   }
 }
 
+@media (min-width: 992px) {
+  main {
+    min-height: 1150px;
+  }
+}
+
 section {
   width: 270px;
   height: 330px;
@@ -286,8 +298,8 @@ section {
 
 @media (min-width: 992px) {
   section {
-    width: 340px;
-    height: 410px;
+    width: 380px;
+    height: 450px;
   }
 }
 
@@ -380,7 +392,7 @@ section {
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
-.menu .menu__lechic {
+.menu__lechic {
   background-color: #fff5fe;
   color: #c77412;
   font-family: "Source Serif Pro", serif;
@@ -388,21 +400,18 @@ section {
   text-decoration: none;
 }
 
-.menu .menu__lechic a {
+.menu__lechic a {
   text-decoration: none;
 }
 
-.menu .menu__lechic h2 {
+.menu__lechic h2 {
   color: #c77412;
 }
 
-.menu .lechic__title--gradient {
-  font-family: "Croissant One", serif;
-  background-clip: initial;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
-  background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+@media (min-width: 992px) {
+  .menu__lechic .lechic__title--gradient {
+    font-size: 1.5em;
+  }
 }
 
 .menu__delice {
@@ -422,7 +431,7 @@ section {
   font-weight: lighter;
 }
 
-.menu .delice__title--gradient {
+.menu__delice__title--gradient {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -447,7 +456,7 @@ section {
   font-weight: lighter;
 }
 
-.menu .palette__title--gradient {
+.menu__palette__title--gradient {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -614,7 +623,7 @@ section {
   margin: auto 15px auto 0px;
 }
 
-.subtitle {
+.line {
   display: inline;
   background: -webkit-gradient(linear, left bottom, left top, from(#3c1218), color-stop(10%, #3c1218), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -623,11 +632,11 @@ section {
   margin: auto;
 }
 
-.subtitle:hover {
+.line:hover {
   background-size: 100% 100%;
 }
 
-.subtitle:hover {
+.line:hover {
   background-size: 100% 100%;
 }
 
@@ -1085,16 +1094,7 @@ body {
   margin: auto;
 }
 
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 1.7em;
-}
-
 h3 {
-  font-size: 1.5em;
   font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

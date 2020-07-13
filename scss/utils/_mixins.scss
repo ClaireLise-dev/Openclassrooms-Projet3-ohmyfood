@@ -85,7 +85,10 @@
     color: $logo_color;
     width: 260px;
     height: 40px;
-    margin: 10px;
+    margin: 30px;
+    @include lg {
+        margin: 50px;
+    }
     text-align: center;
     border-radius: 10px;
 }
@@ -105,6 +108,9 @@
     @include md {
         min-height: 860px;
     }
+    @include lg {
+        min-height: 1150px;
+    }
 }
 
 @mixin section
@@ -114,8 +120,8 @@
     margin: 20px;
     text-align: center;
     @include lg {
-    width: 340px;
-    height: 410px;
+    width: 380px;
+    height: 450px;
     }
 }
 

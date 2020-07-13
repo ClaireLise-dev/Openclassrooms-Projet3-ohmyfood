@@ -55,7 +55,7 @@
     }
 }
 .anim4 {
-@include line_anim ($delice_menu_gradient1);
+    @include line_anim ($delice_menu_gradient1);
 }
 .anim5 {
     @include line_anim ($delice_menu_gradient2);
