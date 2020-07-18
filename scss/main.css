@@ -162,6 +162,7 @@ footer h2 {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +176,6 @@ footer h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2em;
 }
 
 footer h2:hover {
@@ -529,6 +529,13 @@ section {
 @media (min-width: 768px) {
   .lanote {
     width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .lanote {
+    width: 70%;
+    padding-bottom: 90px;
   }
 }
 
