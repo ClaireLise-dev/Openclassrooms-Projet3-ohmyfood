@@ -698,6 +698,12 @@ section {
   margin: 40px;
 }
 
+@media (min-width: 768px) {
+  .lechic h3 {
+    margin: 60px;
+  }
+}
+
 @media (min-width: 992px) {
   .lechic h3 {
     margin: 90px;
@@ -716,6 +722,12 @@ section {
   background-image: -webkit-gradient(linear, left top, right top, from(#c77412), to(#905bfd));
   background-image: linear-gradient(0.25turn, #c77412, #905bfd);
   font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .lechic__title--gradient {
+    font-size: 2.3em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -867,6 +879,7 @@ section {
 @media (min-width: 768px) {
   .delice {
     width: 80%;
+    padding-bottom: 40px;
   }
 }
 
@@ -892,6 +905,12 @@ section {
   margin: 40px;
 }
 
+@media (min-width: 768px) {
+  .delice h3 {
+    margin: 60px;
+  }
+}
+
 @media (min-width: 992px) {
   .delice h3 {
     margin: 90px;
@@ -910,6 +929,12 @@ section {
   background-image: -webkit-gradient(linear, left top, right top, from(#0431df), color-stop(#518cf0), to(#0887fb));
   background-image: linear-gradient(0.25turn, #0431df, #518cf0, #0887fb);
   font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .delice__title--gradient {
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1024,6 +1049,7 @@ section {
 @media (min-width: 768px) {
   .palette {
     width: 80%;
+    padding-bottom: 40px;
   }
 }
 
@@ -1056,6 +1082,12 @@ section {
   margin: 40px;
 }
 
+@media (min-width: 768px) {
+  .palette h3 {
+    margin: 60px;
+  }
+}
+
 @media (min-width: 992px) {
   .palette h3 {
     margin: 90px;
@@ -1074,6 +1106,12 @@ section {
   background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
   font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .palette__title--gradient {
+    font-size: 2.5em;
+  }
 }
 
 @media (min-width: 992px) {

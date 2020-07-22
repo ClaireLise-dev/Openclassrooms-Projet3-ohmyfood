@@ -2,6 +2,7 @@
     @include delice;
     @include md {
         width: 80%;
+        padding-bottom: 40px;
     }
     @include lg {
         width: 70%;
@@ -23,6 +24,9 @@
     }
     h3 {
         margin: 40px;
+        @include md {
+            margin: 60px;
+        }
         @include lg {
         margin: 90px;
         }
@@ -34,6 +38,9 @@
     &__title--gradient {
         @include delice__title--gradient;
         font-size: 2em;
+        @include md {
+            font-size: 3em;
+        }
         @include lg {
             font-size: 4em;
         }
